@@ -26,7 +26,7 @@
 - **Public Itineraries:** Share your travel plans via public URLs for inspiration or community copying.
 - **User Profile:** Manage personal preferences, saved destinations, and account settings.
 
-###📊 Admin & Analytics (Optional)
+### Admin & Analytics (Optional)
 - **Admin Dashboard:** Track platform usage, popular destinations, and user engagement trends.
 
 ---
