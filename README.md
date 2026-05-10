@@ -1,4 +1,4 @@
-# 🌍 Traveloop – Personalized Travel Planning Made Easy
+#  Traveloop – Personalized Travel Planning Made Easy
 
 ![Traveloop Banner](./traveloopfrontend/public/websiteimage.png)
 
