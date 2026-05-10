@@ -1,0 +1,242 @@
+/* styles/login.css */
+
+.login-container {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.login-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E4E4E4;
+  /* Enforce max-height so it always fits on laptops without scroll */
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.center-col {
+  background: #FFFFFF;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-img {
+  width: 240px;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 8px 0 16px 0;
+}
+
+.heading-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.black-text {
+  color: #111111;
+}
+
+.red-text {
+  color: #F81927;
+}
+
+.heading-subtitle {
+  color: #5F5F5F;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1.5px solid #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.2s ease;
+  background-color: #FFFFFF;
+}
+
+.avatar-circle:hover {
+  border-color: #F81927;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-text {
+  color: #5F5F5F;
+  font-size: 14px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.login-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px 12px 42px;
+  border: 1px solid #CFCFCF;
+  border-radius: 10px;
+  background: #FFFFFF;
+  font-size: 15px;
+  color: #111111;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.login-input.password {
+  padding-right: 46px;
+}
+
+.login-input:focus {
+  border-color: #F81927;
+}
+
+.login-input::placeholder {
+  color: #8A8A8A;
+}
+
+.eye-button {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+  margin-top: 4px;
+  font-family: inherit;
+}
+
+.login-button:hover {
+  background: #D9101E;
+}
+
+.login-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.login-link {
+  font-size: 14px;
+  color: #5F5F5F;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 200ms ease;
+}
+
+.login-link:hover {
+  color: #F81927;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    overflow: auto; /* Allow scroll on small screens */
+    padding: 16px;
+  }
+  .center-col {
+    padding: 32px 24px;
+  }
+  .login-card {
+    max-width: 100%;
+    max-height: none;
+  }
+}
