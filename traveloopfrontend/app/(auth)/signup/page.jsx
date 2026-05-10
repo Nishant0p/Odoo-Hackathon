@@ -44,6 +44,10 @@ export default function SignupPage() {
 
     try {
       const res = await axios.post('https://reactbits.in/api/auth/register', {
+<<<<<<< HEAD
+=======
+        name: `${firstName} ${lastName}`.trim(),
+>>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
         firstName, 
         lastName, 
         email, 
@@ -52,7 +56,11 @@ export default function SignupPage() {
         password, 
         city, 
         country, 
+<<<<<<< HEAD
         additionalInfo 
+=======
+        message: additionalInfo 
+>>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
       })
 
       if (res.data?.token) {

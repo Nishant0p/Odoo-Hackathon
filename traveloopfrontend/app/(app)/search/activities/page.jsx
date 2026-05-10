@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -583,3 +584,12 @@ export default function ActivitiesPage() {
     </div>
   )
 }
+=======
+import React from "react";
+
+const SearchActivities = () => {
+  return <div>Search Activities</div>;
+};
+
+export default SearchActivities;
+>>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d

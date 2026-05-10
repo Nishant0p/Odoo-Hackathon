@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -136,3 +137,12 @@ export default function BuildItineraryPage() {
       </div>
   )
 }
+=======
+import React from "react";
+
+const TripBuilder = () => {
+  return <div>Trip Builder</div>;
+};
+
+export default TripBuilder;
+>>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d

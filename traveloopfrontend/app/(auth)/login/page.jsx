@@ -44,7 +44,11 @@ export default function LoginPage() {
 
     try {
       const res = await axios.post('https://reactbits.in/api/auth/login', {
+<<<<<<< HEAD
         username,
+=======
+        email: username,
+>>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
         password
       })
 

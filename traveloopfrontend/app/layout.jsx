@@ -14,8 +14,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+<<<<<<< HEAD
     <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className={inter.className}>{children}</body>
+=======
+    <html lang="en" className={cn("font-sans", geist.variable)} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
+        {children}
+      </body>
+>>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
     </html>
   );
 }
