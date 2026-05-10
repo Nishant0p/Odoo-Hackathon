@@ -8,11 +8,7 @@
 @tailwind utilities;
 
 * {
-<<<<<<< HEAD
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-=======
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -140,5 +136,5 @@
   html {
     @apply font-sans;
     }
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
 }

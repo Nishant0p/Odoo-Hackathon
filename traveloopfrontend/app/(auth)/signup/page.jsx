@@ -44,10 +44,7 @@ export default function SignupPage() {
 
     try {
       const res = await axios.post('https://reactbits.in/api/auth/register', {
-<<<<<<< HEAD
-=======
         name: `${firstName} ${lastName}`.trim(),
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
         firstName, 
         lastName, 
         email, 
@@ -56,11 +53,7 @@ export default function SignupPage() {
         password, 
         city, 
         country, 
-<<<<<<< HEAD
-        additionalInfo 
-=======
-        message: additionalInfo 
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+        message: additionalInfo
       })
 
       if (res.data?.token) {
@@ -102,18 +95,19 @@ export default function SignupPage() {
 
             <input 
               type="file" 
+              id="signup-avatar"
               ref={fileInputRef} 
               onChange={handleImageChange} 
               style={{ display: 'none' }} 
               accept="image/*" 
             />
-            <div className="avatar-circle" onClick={() => fileInputRef.current?.click()} title="Upload Photo">
+            <label htmlFor="signup-avatar" className="avatar-circle" title="Upload Photo">
               {avatarUrl ? (
                 <img src={avatarUrl} alt="Avatar" className="avatar-img" />
               ) : (
                 <span className="avatar-text">Photo</span>
               )}
-            </div>
+            </label>
 
             <form className="form-container" onSubmit={handleSignup}>
               

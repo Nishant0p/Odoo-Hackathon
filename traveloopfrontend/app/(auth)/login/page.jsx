@@ -44,11 +44,7 @@ export default function LoginPage() {
 
     try {
       const res = await axios.post('https://reactbits.in/api/auth/login', {
-<<<<<<< HEAD
-        username,
-=======
         email: username,
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
         password
       })
 
@@ -87,18 +83,19 @@ export default function LoginPage() {
             </div>
             <input 
               type="file" 
+              id="login-avatar"
               ref={fileInputRef} 
               onChange={handleImageChange} 
               style={{ display: 'none' }} 
               accept="image/*" 
             />
-            <div className="avatar-circle" onClick={() => fileInputRef.current?.click()} title="Upload Photo">
+            <label htmlFor="login-avatar" className="avatar-circle" title="Upload Photo">
               {avatarUrl ? (
                 <img src={avatarUrl} alt="Avatar" className="avatar-img" />
               ) : (
                 <span className="avatar-text">Photo</span>
               )}
-            </div>
+            </label>
 
             <form className="form-container" onSubmit={handleLogin}>
 

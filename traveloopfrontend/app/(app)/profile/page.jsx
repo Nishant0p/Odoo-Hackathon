@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -122,9 +122,9 @@ function ProfileTripCard({ trip, showBadge = false }) {
         )}
         <button className="profile-trip-menu-btn">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="#5F5F5F" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="3.5" cy="8" r="1.3"/>
-            <circle cx="8" cy="8" r="1.3"/>
-            <circle cx="12.5" cy="8" r="1.3"/>
+            <circle cx="3.5" cy="8" r="1.3" />
+            <circle cx="8" cy="8" r="1.3" />
+            <circle cx="12.5" cy="8" r="1.3" />
           </svg>
         </button>
       </div>
@@ -133,17 +133,17 @@ function ProfileTripCard({ trip, showBadge = false }) {
         <div className="profile-trip-meta-row">
           <div className="profile-trip-meta-item">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="6.5" cy="5" r="2"/>
-              <path d="M6.5 1 C4 1 2 3 2 5 C2 8 6.5 12 6.5 12 C6.5 12 11 8 11 5 C11 3 9 1 6.5 1Z"/>
+              <circle cx="6.5" cy="5" r="2" />
+              <path d="M6.5 1 C4 1 2 3 2 5 C2 8 6.5 12 6.5 12 C6.5 12 11 8 11 5 C11 3 9 1 6.5 1Z" />
             </svg>
             <span>{trip.country}</span>
           </div>
           <div className="profile-trip-meta-item">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="1" y="2" width="11" height="10" rx="1.5"/>
-              <line x1="1" y1="5.5" x2="12" y2="5.5"/>
-              <line x1="4" y1="1" x2="4" y2="3.5"/>
-              <line x1="9" y1="1" x2="9" y2="3.5"/>
+              <rect x="1" y="2" width="11" height="10" rx="1.5" />
+              <line x1="1" y1="5.5" x2="12" y2="5.5" />
+              <line x1="4" y1="1" x2="4" y2="3.5" />
+              <line x1="9" y1="1" x2="9" y2="3.5" />
             </svg>
             <span>{trip.startDate} – {trip.endDate}</span>
           </div>
@@ -151,18 +151,18 @@ function ProfileTripCard({ trip, showBadge = false }) {
         <div className="profile-trip-stats-row">
           <div className="profile-trip-stat">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="5" cy="4.5" r="2"/>
-              <path d="M1 11 Q1 8 5 8 Q9 8 9 11"/>
-              <circle cx="9.5" cy="4.5" r="1.5"/>
-              <path d="M8 11 Q9 8.5 12 9.5"/>
+              <circle cx="5" cy="4.5" r="2" />
+              <path d="M1 11 Q1 8 5 8 Q9 8 9 11" />
+              <circle cx="9.5" cy="4.5" r="1.5" />
+              <path d="M8 11 Q9 8.5 12 9.5" />
             </svg>
             <span>{trip.travelers} Travelers</span>
           </div>
           <div className="profile-trip-stat">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="1" y="3.5" width="11" height="8" rx="1.5"/>
-              <path d="M1 6.5 L12 6.5"/>
-              <circle cx="9.5" cy="9" r="0.8"/>
+              <rect x="1" y="3.5" width="11" height="8" rx="1.5" />
+              <path d="M1 6.5 L12 6.5" />
+              <circle cx="9.5" cy="9" r="0.8" />
             </svg>
             <span>{trip.budget} Budget</span>
           </div>
@@ -192,23 +192,23 @@ export default function ProfilePage() {
         <div className="profile-nav-right">
           <button className="profile-nav-icon-btn">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5F5F5F" strokeWidth="1.5">
-              <circle cx="11" cy="11" r="9"/>
-              <path d="M11 2 C11 2 7 6 7 11 C7 16 11 20 11 20"/>
-              <path d="M11 2 C11 2 15 6 15 11 C15 16 11 20 11 20"/>
-              <line x1="2" y1="11" x2="20" y2="11"/>
+              <circle cx="11" cy="11" r="9" />
+              <path d="M11 2 C11 2 7 6 7 11 C7 16 11 20 11 20" />
+              <path d="M11 2 C11 2 15 6 15 11 C15 16 11 20 11 20" />
+              <line x1="2" y1="11" x2="20" y2="11" />
             </svg>
           </button>
           <button className="profile-nav-icon-btn">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5F5F5F" strokeWidth="1.5">
-              <path d="M6 10 C6 6 8 4 11 4 C14 4 16 6 16 10 L16 14 L18 16 L4 16 L6 14 Z"/>
-              <line x1="9" y1="17" x2="13" y2="17"/>
+              <path d="M6 10 C6 6 8 4 11 4 C14 4 16 6 16 10 L16 14 L18 16 L4 16 L6 14 Z" />
+              <line x1="9" y1="17" x2="13" y2="17" />
             </svg>
             <span className="profile-nav-notif-dot" />
           </button>
           <button className="profile-nav-profile-circle">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5F5F5F" strokeWidth="1.5">
-              <circle cx="11" cy="8" r="4"/>
-              <path d="M3 20 Q3 15 11 15 Q19 15 19 20"/>
+              <circle cx="11" cy="8" r="4" />
+              <path d="M3 20 Q3 15 11 15 Q19 15 19 20" />
             </svg>
           </button>
         </div>
@@ -237,8 +237,8 @@ export default function ProfilePage() {
               )}
               <button className="profile-avatar-edit">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M2 4 L4 2 L6 4 L12 4 L12 11 L2 11 Z"/>
-                  <circle cx="7" cy="7.5" r="2"/>
+                  <path d="M2 4 L4 2 L6 4 L12 4 L12 11 L2 11 Z" />
+                  <circle cx="7" cy="7.5" r="2" />
                 </svg>
               </button>
             </div>
@@ -249,7 +249,7 @@ export default function ProfilePage() {
                 {user.isPremium && (
                   <span className="profile-premium-badge">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="#F81927" xmlns="http://www.w3.org/2000/svg">
-                      <polygon points="6,1 7.5,4.5 11,5 8.5,7.5 9,11 6,9.5 3,11 3.5,7.5 1,5 4.5,4.5"/>
+                      <polygon points="6,1 7.5,4.5 11,5 8.5,7.5 9,11 6,9.5 3,11 3.5,7.5 1,5 4.5,4.5" />
                     </svg>
                     Premium
                   </span>
@@ -257,16 +257,16 @@ export default function ProfilePage() {
               </div>
               <div className="profile-contact-row">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 2 L5 2 L6.5 5.5 L5 6.5 C5.5 8 6 8.5 7.5 9 L8.5 7.5 L12 9 L12 11 C9 12 2 8 3 2Z"/>
+                  <path d="M3 2 L5 2 L6.5 5.5 L5 6.5 C5.5 8 6 8.5 7.5 9 L8.5 7.5 L12 9 L12 11 C9 12 2 8 3 2Z" />
                 </svg>
                 <span>{user.phone}</span>
-                <span style={{color: '#EAEAEA', margin: '0 4px'}}>|</span>
+                <span style={{ color: '#EAEAEA', margin: '0 4px' }}>|</span>
                 <span>{user.email}</span>
               </div>
               <div className="profile-location-row">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="7" cy="5.5" r="2.5"/>
-                  <path d="M7 1 C4 1 1.5 3.5 1.5 5.5 C1.5 9 7 13 7 13 C7 13 12.5 9 12.5 5.5 C12.5 3.5 10 1 7 1Z"/>
+                  <circle cx="7" cy="5.5" r="2.5" />
+                  <path d="M7 1 C4 1 1.5 3.5 1.5 5.5 C1.5 9 7 13 7 13 C7 13 12.5 9 12.5 5.5 C12.5 3.5 10 1 7 1Z" />
                 </svg>
                 <span>{user.location}</span>
               </div>
@@ -274,8 +274,8 @@ export default function ProfilePage() {
 
             <button className="profile-edit-btn">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M2 10 L10 2 L12 4 L4 12 Z"/>
-                <line x1="2" y1="12" x2="14" y2="12"/>
+                <path d="M2 10 L10 2 L12 4 L4 12 Z" />
+                <line x1="2" y1="12" x2="14" y2="12" />
               </svg>
               Edit Profile
             </button>
@@ -287,9 +287,9 @@ export default function ProfilePage() {
             <div className="profile-stat-item">
               <div className="profile-stat-icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="7" width="16" height="11" rx="2"/>
-                  <path d="M7 7 L7 5 Q7 3 10 3 Q13 3 13 5 L13 7"/>
-                  <line x1="2" y1="12" x2="18" y2="12"/>
+                  <rect x="2" y="7" width="16" height="11" rx="2" />
+                  <path d="M7 7 L7 5 Q7 3 10 3 Q13 3 13 5 L13 7" />
+                  <line x1="2" y1="12" x2="18" y2="12" />
                 </svg>
               </div>
               <div className="profile-stat-text">
@@ -301,8 +301,8 @@ export default function ProfilePage() {
             <div className="profile-stat-item">
               <div className="profile-stat-icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="10" cy="10" r="8"/>
-                  <path d="M6 10 L9 13 L14 7"/>
+                  <circle cx="10" cy="10" r="8" />
+                  <path d="M6 10 L9 13 L14 7" />
                 </svg>
               </div>
               <div className="profile-stat-text">
@@ -314,10 +314,10 @@ export default function ProfilePage() {
             <div className="profile-stat-item">
               <div className="profile-stat-icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="10" cy="10" r="8"/>
-                  <path d="M10 2 C10 2 7 5 7 10 C7 15 10 18 10 18"/>
-                  <path d="M10 2 C10 2 13 5 13 10 C13 15 10 18 10 18"/>
-                  <line x1="2" y1="10" x2="18" y2="10"/>
+                  <circle cx="10" cy="10" r="8" />
+                  <path d="M10 2 C10 2 7 5 7 10 C7 15 10 18 10 18" />
+                  <path d="M10 2 C10 2 13 5 13 10 C13 15 10 18 10 18" />
+                  <line x1="2" y1="10" x2="18" y2="10" />
                 </svg>
               </div>
               <div className="profile-stat-text">
@@ -329,9 +329,9 @@ export default function ProfilePage() {
             <div className="profile-stat-item">
               <div className="profile-stat-icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#5F5F5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="5" width="16" height="12" rx="2"/>
-                  <path d="M2 9 L18 9"/>
-                  <circle cx="14" cy="13" r="1.5"/>
+                  <rect x="2" y="5" width="16" height="12" rx="2" />
+                  <path d="M2 9 L18 9" />
+                  <circle cx="14" cy="13" r="1.5" />
                 </svg>
               </div>
               <div className="profile-stat-text">
@@ -353,7 +353,7 @@ export default function ProfilePage() {
             <button className="profile-view-all">
               View All
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F81927" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 3 L9 7 L5 11"/>
+                <path d="M5 3 L9 7 L5 11" />
               </svg>
             </button>
           </div>
@@ -374,7 +374,7 @@ export default function ProfilePage() {
             <button className="profile-view-all">
               View All
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F81927" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 3 L9 7 L5 11"/>
+                <path d="M5 3 L9 7 L5 11" />
               </svg>
             </button>
           </div>
@@ -402,12 +402,3 @@ export default function ProfilePage() {
     </div>
   )
 }
-=======
-import React from "react";
-
-const Profile = () => {
-  return <div>Profile</div>;
-};
-
-export default Profile;
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d

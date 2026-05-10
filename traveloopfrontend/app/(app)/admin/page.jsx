@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-import React from "react";
 
-const Admin = () => {
-  return <div>Admin</div>;
-};
-
-export default Admin;
-=======
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
@@ -120,7 +112,7 @@ export default function AdminDashboard() {
               headers: { Authorization: `Bearer ${token}` }
             });
             const trips = Array.isArray(tripsRes.data) ? tripsRes.data : (tripsRes.data.trips || []);
-            
+
             // Update trip count
             const userIdx = usersFound.findIndex(u => u.id === user.id);
             if (userIdx >= 0) usersFound[userIdx].tripCount = trips.length;
@@ -163,10 +155,10 @@ export default function AdminDashboard() {
                 trips.forEach(t => {
                   tripsFound.push({ ...t, _userId: user.id, _userName: user.name || account.name });
                 });
-              } catch {}
+              } catch { }
               break;
             }
-          } catch {}
+          } catch { }
         }
       }
     }
@@ -216,7 +208,7 @@ export default function AdminDashboard() {
       }).then(res => {
         const trips = Array.isArray(res.data) ? res.data : (res.data.trips || []);
         setUserTrips(trips);
-      }).catch(() => {}).finally(() => setUserTripsLoading(false));
+      }).catch(() => { }).finally(() => setUserTripsLoading(false));
     }
   };
 
@@ -241,7 +233,7 @@ export default function AdminDashboard() {
         setTripDetail(res.data);
         setDetailLoading(false);
         return;
-      } catch {}
+      } catch { }
     }
     // Fallback to the trip data we already have
     setTripDetail(trip);
@@ -297,13 +289,13 @@ export default function AdminDashboard() {
           <form onSubmit={handleAdminLogin} className="admin-login-form">
             <div className="admin-input-wrapper">
               <svg className="admin-input-icon" viewBox="0 0 18 18" fill="none" stroke="#6F6F6F" strokeWidth="1.5" width="18" height="18">
-                <circle cx="9" cy="6" r="4"/><path d="M1 18 Q1 13 9 13 Q17 13 17 18"/>
+                <circle cx="9" cy="6" r="4" /><path d="M1 18 Q1 13 9 13 Q17 13 17 18" />
               </svg>
               <input type="text" className="admin-input" placeholder="Admin Username" value={adminUser} onChange={e => setAdminUser(e.target.value)} autoComplete="off" />
             </div>
             <div className="admin-input-wrapper">
               <svg className="admin-input-icon" viewBox="0 0 18 18" fill="none" stroke="#6F6F6F" strokeWidth="1.5" width="18" height="18">
-                <rect x="2" y="9" width="14" height="9" rx="2"/><path d="M 5 9 V 6 A 4 4 0 0 1 13 6 V 9"/>
+                <rect x="2" y="9" width="14" height="9" rx="2" /><path d="M 5 9 V 6 A 4 4 0 0 1 13 6 V 9" />
               </svg>
               <input type="password" className="admin-input" placeholder="Admin Password" value={adminPass} onChange={e => setAdminPass(e.target.value)} autoComplete="off" />
             </div>
@@ -578,4 +570,3 @@ export default function AdminDashboard() {
     </div>
   );
 }
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d

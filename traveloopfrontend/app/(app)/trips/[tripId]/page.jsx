@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 "use client";
 
 import React, { useState } from 'react';
@@ -541,12 +541,4 @@ export default function ItineraryPage() {
     </div>
   );
 }
-=======
-import React from "react";
 
-const TripDetails = () => {
-  return <div>Trip Details</div>;
-};
-
-export default TripDetails;
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -284,12 +284,4 @@ export default function TripsPage() {
     </div>
   )
 }
-=======
-import React from "react";
 
-const Trips = () => {
-  return <div>Trips</div>;
-};
-
-export default Trips;
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d

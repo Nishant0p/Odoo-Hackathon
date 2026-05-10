@@ -10,8 +10,7 @@
     box-sizing: border-box;
   }
 
-<<<<<<< HEAD
-=======
+
   /* ---- NAVBAR ---- */
   .dash-navbar {
     width: 100%;
@@ -143,7 +142,7 @@
     background: #D9101E;
   }
 
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
   /* ---- HERO SECTION ---- */
   .dash-hero {
     position: relative;
@@ -541,13 +540,12 @@
     .dash-trips-grid {
       grid-template-columns: repeat(2, 1fr);
     }
-<<<<<<< HEAD
-=======
+
 
     .dash-nav-links {
       display: none;
     }
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
   }
 
   @media (max-width: 768px) {
@@ -575,13 +573,12 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-<<<<<<< HEAD
-=======
+
     .dash-navbar {
       padding: 0 20px;
     }
 
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
     .dash-search-row {
       flex-wrap: wrap;
       gap: 8px;

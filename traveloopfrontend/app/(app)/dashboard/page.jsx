@@ -3,11 +3,10 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Sora } from 'next/font/google'
-<<<<<<< HEAD
-=======
+
 import Navbar from '../../../components/layout/Navbar'
 import Footer from '../../../components/layout/Footer'
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
 import '../../../styles/dashboard.css'
 
 const sora = Sora({ subsets: ['latin'], weight: ['400', '600', '700', '800'] })
@@ -49,12 +48,10 @@ export default function DashboardPage() {
   return (
     <div className={`dashboard-root ${sora.className}`}>
 
-<<<<<<< HEAD
-      {/* 2. HERO SECTION */}
-=======
+
       {/* 1. NAVBAR */}
       <Navbar customClass="dash-navbar" />
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
 
       {/* 2. HERO SECTION */}
       <section className="dash-hero">
@@ -206,11 +203,10 @@ export default function DashboardPage() {
         Plan a trip
       </button>
 
-<<<<<<< HEAD
-=======
+
       <Footer customClass="dash-footer" />
 
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
     </div>
   )
 }

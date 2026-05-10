@@ -10,8 +10,7 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
+
 /* ---- NAVBAR ---- */
 .create-trip-navbar {
   width: 100%;
@@ -99,7 +98,7 @@
   border-color: #F81927;
 }
 
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
 /* ---- MAIN LAYOUT CONTAINER ---- */
 .create-trip-container {
   max-width: 1440px;
@@ -408,14 +407,7 @@
   transform: translateY(-2px);
 }
 
-<<<<<<< HEAD
-/* ---- RESPONSIVE ---- */
-@media (max-width: 1024px) {
-  .create-trip-cards-grid { grid-template-columns: repeat(2, 1fr); }
-}
 
-@media (max-width: 768px) {
-=======
 /* ---- FOOTER ---- */
 .create-trip-footer {
   width: 100%;
@@ -462,7 +454,7 @@
 
 @media (max-width: 768px) {
   .create-trip-navbar { height: 74px; padding: 0 20px; }
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
   .create-trip-container { padding: 0 20px; }
   .create-trip-header { flex-direction: column; gap: 20px; margin-top: 32px; }
   .create-trip-title { font-size: 32px; }
@@ -473,10 +465,9 @@
   .create-trip-input, .create-trip-input-wrap { width: 100%; flex: unset; }
   .create-trip-actions { justify-content: center; }
   .create-trip-submit-btn { width: 100%; }
-<<<<<<< HEAD
-=======
+
   .create-trip-footer { flex-direction: column; height: auto; padding: 20px; gap: 12px; }
->>>>>>> 35ca6e74d641af63cf10c2e2aeb64950a5a6216d
+
 }
 
 @media (max-width: 480px) {
