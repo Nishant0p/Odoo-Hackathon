@@ -3,8 +3,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Sora } from 'next/font/google'
-import Navbar from '../../../../components/layout/Navbar'
-import Footer from '../../../../components/layout/Footer'
 import '../../../../styles/create-trip.css'
 
 const sora = Sora({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
@@ -28,8 +26,7 @@ export default function CreateTripPage() {
   return (
     <div className={`create-trip-root ${sora.className}`}>
 
-      {/* 1. NAVBAR */}
-      <Navbar customClass="create-trip-navbar" />
+      {/* 1. PAGE HEADER */}
 
       {/* 2. PAGE HEADER */}
       <div className="create-trip-container">
@@ -193,8 +190,7 @@ export default function CreateTripPage() {
         </div>
       </div>
 
-      {/* 6. FOOTER */}
-      <Footer customClass="create-trip-footer" />
+      {/* END CONTENT */}
 
     </div>
   )

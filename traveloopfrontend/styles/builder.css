@@ -1,0 +1,277 @@
+/* ================================
+   BUILD ITINERARY PAGE
+   ================================ */
+
+.builder-root {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  font-family: 'Sora', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---- MAIN LAYOUT CONTAINER ---- */
+.builder-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* ---- PAGE HEADER ---- */
+.builder-header {
+  margin-top: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.builder-header-left {}
+
+.builder-title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+}
+
+.builder-description {
+  font-size: 18px;
+  color: #5F5F5F;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0;
+}
+
+/* ---- BACK BUTTON ---- */
+.builder-back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 210px;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  transition: background 200ms ease, border-color 200ms ease;
+  flex-shrink: 0;
+}
+
+.builder-back-btn:hover {
+  background: #F5F5F5;
+  border-color: #CFCFCF;
+}
+
+/* ---- SECTION CARDS ---- */
+.builder-sections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.builder-section-card {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  box-sizing: border-box;
+}
+
+/* ---- SECTION CARD HEADER ---- */
+.builder-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.builder-section-accent {
+  width: 4px;
+  height: 24px;
+  background: #F81927;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.builder-section-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+}
+
+.builder-section-desc {
+  font-size: 16px;
+  color: #5F5F5F;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 0 24px 0;
+  padding-left: 18px;
+}
+
+/* ---- INPUT GRID ---- */
+.builder-input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ---- INPUT GROUPS ---- */
+.builder-input-group {}
+
+.builder-input-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.builder-input-wrap {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #CFCFCF;
+  border-radius: 12px;
+  padding: 0 18px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.builder-input-wrap:focus-within {
+  border-color: #F81927;
+  box-shadow: 0 0 0 3px rgba(248,25,39,0.08);
+}
+
+.builder-input-inner {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #111111;
+  font-family: 'Sora', sans-serif;
+  background: transparent;
+}
+
+.builder-input-inner::placeholder {
+  color: #8A8A8A;
+  font-size: 15px;
+}
+
+/* ---- ADD ANOTHER SECTION AREA ---- */
+.builder-add-section {
+  width: 100%;
+  height: 180px;
+  border: 2px dashed #D9D9D9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  background: #FFFFFF;
+  transition: border-color 200ms ease, background 200ms ease;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.builder-add-section:hover {
+  border-color: #F81927;
+  background: #FFF5F5;
+}
+
+.builder-add-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #F81927;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 200ms ease;
+}
+
+.builder-add-section:hover .builder-add-circle {
+  background: #F81927;
+}
+
+.builder-add-section:hover .builder-add-circle svg {
+  stroke: #FFFFFF;
+}
+
+.builder-add-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+}
+
+.builder-add-sublabel {
+  font-size: 14px;
+  color: #5F5F5F;
+  margin: 0;
+}
+
+/* ---- SAVE & CONTINUE BUTTON ---- */
+.builder-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.builder-save-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 220px;
+  height: 62px;
+  border-radius: 14px;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background 200ms ease, transform 200ms ease;
+  box-shadow: 0 4px 20px rgba(248,25,39,0.30);
+}
+
+.builder-save-btn:hover {
+  background: #D9101E;
+  transform: translateY(-2px);
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .builder-container { padding: 0 20px; }
+  .builder-header { flex-direction: column; gap: 20px; margin-top: 32px; }
+  .builder-title { font-size: 32px; }
+  .builder-description { font-size: 16px; }
+  .builder-back-btn { width: 100%; }
+  .builder-section-card { padding: 24px; }
+  .builder-input-grid { grid-template-columns: 1fr; }
+  .builder-actions { justify-content: center; }
+  .builder-save-btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .builder-title { font-size: 26px; }
+  .builder-section-title { font-size: 22px; }
+}

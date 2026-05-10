@@ -10,137 +10,6 @@
     box-sizing: border-box;
   }
 
-  /* ---- NAVBAR ---- */
-  .dash-navbar {
-    width: 100%;
-    background: transparent;
-    border-bottom: 1px solid #EAEAEA;
-    padding: 0 40px;
-    height: 88px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
-
-  .dash-nav-left {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .dash-logo-img {
-    width: 180px;
-    height: auto;
-    object-fit: contain;
-    object-position: left;
-  }
-
-  .dash-nav-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .dash-nav-links li a {
-    text-decoration: none;
-    color: #5F5F5F;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 200ms ease;
-  }
-
-  .dash-nav-links li a:hover {
-    color: #111111;
-  }
-
-  .dash-nav-right {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .dash-nav-icon-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 200ms ease;
-  }
-
-  .dash-nav-icon-btn svg {
-    width: 22px;
-    height: 22px;
-  }
-
-  .dash-nav-icon-btn:hover {
-    background: #F5F5F5;
-  }
-
-  .dash-profile-circle {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid #EAEAEA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    cursor: pointer;
-    transition: border-color 200ms ease;
-    padding: 0;
-  }
-
-  .dash-profile-circle svg {
-    width: 22px;
-    height: 22px;
-  }
-
-  .dash-profile-circle:hover {
-    border-color: #F81927;
-  }
-
-  .dash-nav-login {
-    font-size: 14px;
-    font-weight: 600;
-    color: #111111;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-family: 'Sora', sans-serif;
-    transition: background 200ms ease;
-  }
-
-  .dash-nav-login:hover {
-    background: #F5F5F5;
-  }
-
-  .dash-nav-signup {
-    font-size: 14px;
-    font-weight: 600;
-    color: #FFFFFF;
-    background: #F81927;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-family: 'Sora', sans-serif;
-    transition: background 200ms ease;
-  }
-
-  .dash-nav-signup:hover {
-    background: #D9101E;
-  }
-
   /* ---- HERO SECTION ---- */
   .dash-hero {
     position: relative;
@@ -538,10 +407,6 @@
     .dash-trips-grid {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    .dash-nav-links {
-      display: none;
-    }
   }
 
   @media (max-width: 768px) {
@@ -567,10 +432,6 @@
 
     .dash-trips-grid {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    .dash-navbar {
-      padding: 0 20px;
     }
 
     .dash-search-row {

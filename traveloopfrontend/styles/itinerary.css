@@ -1,0 +1,744 @@
+/* c:\Users\sathv_oyp3vt4\OneDrive\Desktop\Odoo-Hackathon-main\traveloopfrontend\styles\itinerary.css */
+
+.itin-page {
+  background-color: #FAFAFA;
+  min-height: 100vh;
+  padding-bottom: 120px;
+  font-family: 'Sora', sans-serif;
+  color: #111111;
+}
+
+.itin-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Breadcrumb */
+.itin-breadcrumb {
+  margin-top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #5F5F5F;
+}
+.itin-breadcrumb-active {
+  color: #F81927;
+  font-weight: 600;
+}
+.itin-breadcrumb-separator {
+  color: #5F5F5F;
+}
+
+/* Main Header */
+.itin-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.itin-title-row {
+  display: flex;
+  align-items: center;
+}
+
+.itin-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.2;
+}
+
+.itin-status-badge {
+  height: 34px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background-color: #FFF0F1;
+  color: #F81927;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.itin-meta-row {
+  margin-top: 14px;
+  display: flex;
+  gap: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5F5F5F;
+  align-items: center;
+}
+
+.itin-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.itin-header-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.itin-btn-secondary {
+  width: 180px;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.itin-btn-primary {
+  width: 180px;
+  height: 56px;
+  border-radius: 14px;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.itin-btn-primary:hover {
+  background: #D9101E;
+}
+
+/* Search + Filter Bar */
+.itin-search-bar {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+}
+
+.itin-search-input-wrapper {
+  position: relative;
+}
+
+.itin-search-input {
+  width: 420px;
+  height: 58px;
+  border-radius: 14px;
+  border: 1px solid #CFCFCF;
+  background: #FFFFFF;
+  padding: 0 20px 0 48px;
+  font-size: 16px;
+  color: #111111;
+  outline: none;
+}
+.itin-search-input::placeholder {
+  color: #8A8A8A;
+}
+.itin-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8A8A8A;
+}
+
+.itin-filter-btn {
+  height: 58px;
+  padding: 0 20px;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Section Heading */
+.itin-section-heading {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itin-section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.itin-section-subtitle {
+  font-size: 17px;
+  color: #5F5F5F;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+
+.itin-btn-expand {
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Main Content Grid */
+.itin-content-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 0.7fr;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+/* Left Column - Day Card */
+.itin-day-card {
+  margin-top: 28px;
+  border-radius: 22px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  padding: 28px;
+  display: flex;
+  gap: 24px;
+}
+
+.itin-day-sidebar {
+  width: 180px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.itin-day-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itin-day-circle-collapsed {
+  background: #8A8A8A;
+}
+
+.itin-day-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 10px;
+}
+
+.itin-day-date {
+  font-size: 14px;
+  color: #5F5F5F;
+  margin-top: 4px;
+}
+
+.itin-day-vibe {
+  background: #FFF0F1;
+  color: #F81927;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  margin-top: 8px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.itin-day-right {
+  flex-grow: 1;
+}
+
+.itin-day-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.itin-day-summary.collapsed {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.itin-day-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
+.itin-day-summary-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.itin-day-cost {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.itin-day-collapse-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #111111;
+  transition: transform 0.2s;
+}
+
+/* Timeline */
+.itin-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 18px;
+}
+
+.itin-activity-row {
+  display: flex;
+  gap: 16px;
+}
+
+.itin-timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10px;
+  margin-top: 6px;
+}
+
+.itin-timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F81927;
+  flex-shrink: 0;
+}
+
+.itin-timeline-line {
+  width: 2px;
+  background: #E5E5E5;
+  flex-grow: 1;
+  margin-top: 4px;
+  margin-bottom: -22px; /* To connect to the next dot */
+}
+
+/* Hide line on the last item */
+.itin-activity-row:last-child .itin-timeline-line {
+  display: none;
+}
+
+.itin-activity-content-wrapper {
+  flex-grow: 1;
+}
+
+.itin-activity-time {
+  font-size: 13px;
+  font-weight: 600;
+  color: #F81927;
+}
+
+.itin-activity-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.itin-activity-img {
+  width: 92px;
+  height: 72px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.itin-activity-details {
+  flex-grow: 1;
+}
+
+.itin-activity-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.itin-activity-location {
+  font-size: 15px;
+  color: #5F5F5F;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.itin-activity-cost-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.itin-activity-cost {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.itin-activity-menu {
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #5F5F5F;
+}
+
+/* Right Column - Cards */
+.itin-sidebar-card {
+  border: 1px solid #EAEAEA;
+  border-radius: 22px;
+  padding: 28px;
+  background: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.itin-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.itin-sidebar-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.itin-sidebar-link {
+  color: #F81927;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.itin-budget-label {
+  font-size: 15px;
+  color: #5F5F5F;
+}
+
+.itin-budget-total {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 4px;
+}
+
+.itin-budget-split {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.itin-budget-split-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.itin-budget-split-col.right {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.itin-budget-split-label {
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
+.itin-budget-split-val {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 4px;
+}
+
+.itin-progress-bar-container {
+  margin-top: 20px;
+}
+
+.itin-progress-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: #EAEAEA;
+  width: 100%;
+  overflow: hidden;
+}
+
+.itin-progress-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #F81927;
+}
+
+.itin-progress-label {
+  font-size: 13px;
+  color: #5F5F5F;
+  margin-top: 6px;
+  text-align: right;
+}
+
+/* Breakdown */
+.itin-breakdown-section {
+  margin-top: 24px;
+}
+
+.itin-breakdown-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.itin-breakdown-row {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FAFAFA;
+}
+.itin-breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.itin-breakdown-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.itin-breakdown-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.itin-breakdown-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.itin-breakdown-val {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5F5F5F;
+}
+
+/* Pie Chart */
+.itin-pie-chart-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itin-pie-chart-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.itin-pie-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itin-pie-center-val {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.itin-pie-center-label {
+  font-size: 13px;
+  color: #5F5F5F;
+}
+
+/* Quick Summary */
+.itin-summary-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 16px;
+}
+
+.itin-summary-row {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FAFAFA;
+}
+.itin-summary-row:last-child {
+  border-bottom: none;
+}
+
+.itin-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5F5F5F;
+}
+
+.itin-summary-val {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.itin-btn-full {
+  width: 100%;
+  height: 58px;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.itin-btn-full:hover {
+  background: #D9101E;
+}
+
+/* Bottom Action Bar */
+.itin-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+  border-top: 1px solid #EAEAEA;
+  height: 72px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.itin-bottom-btn-back {
+  height: 56px;
+  padding: 0 24px;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.itin-bottom-btn-secondary {
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.itin-bottom-btn-primary {
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 14px;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.itin-bottom-btn-primary:hover {
+  background: #D9101E;
+}
+
+/* Hidden elements */
+.itin-hidden {
+  display: none !important;
+}

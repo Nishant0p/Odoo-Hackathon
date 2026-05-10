@@ -1,0 +1,460 @@
+/* ================================
+   MY PROFILE PAGE
+   ================================ */
+
+.profile-root {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  font-family: 'Sora', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---- MAIN LAYOUT CONTAINER ---- */
+.profile-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* ---- PAGE HEADER ---- */
+.profile-header {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+.profile-page-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+}
+
+.profile-page-desc {
+  font-size: 16px;
+  color: #5F5F5F;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- PROFILE CARD ---- */
+.profile-card {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+}
+
+/* Top section: avatar + info + edit button */
+.profile-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* Avatar wrap */
+.profile-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #EAEAEA;
+}
+
+.profile-avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #E4E4E4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #EAEAEA;
+}
+
+.profile-avatar-edit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 200ms ease;
+}
+
+.profile-avatar-edit:hover {
+  border-color: #F81927;
+}
+
+/* Info section */
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+}
+
+.profile-premium-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: #FFF1F2;
+  color: #F81927;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profile-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #5F5F5F;
+  margin-bottom: 8px;
+}
+
+.profile-location-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
+/* Edit Profile button */
+.profile-edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  transition: background 200ms ease, border-color 200ms ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.profile-edit-btn:hover {
+  background: #F5F5F5;
+  border-color: #CFCFCF;
+}
+
+/* ---- STATS ROW ---- */
+.profile-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #EAEAEA;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.profile-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: #FFFFFF;
+}
+
+.profile-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #F9F9F9;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profile-stat-text {}
+
+.profile-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.2;
+  margin: 0 0 4px 0;
+}
+
+.profile-stat-label {
+  font-size: 13px;
+  color: #5F5F5F;
+  margin: 0;
+}
+
+/* ---- SECTION HEADERS ---- */
+.profile-section {
+  margin-bottom: 56px;
+}
+
+.profile-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.profile-section-heading-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-section-accent {
+  width: 4px;
+  height: 24px;
+  background: #F81927;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.profile-section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+}
+
+.profile-view-all {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F81927;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Sora', sans-serif;
+  transition: opacity 200ms ease;
+}
+
+.profile-view-all:hover {
+  opacity: 0.75;
+}
+
+/* ---- TRIP CARDS GRID ---- */
+.profile-trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ---- TRIP CARD (vertical) ---- */
+.profile-trip-card {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-trip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+/* Card image */
+.profile-trip-img-wrap {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-trip-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.profile-trip-card:hover .profile-trip-img {
+  transform: scale(1.05);
+}
+
+.profile-trip-img-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #E4E4E4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8A8A8A;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+}
+
+/* Badge on image */
+.profile-trip-badge-wrap {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+}
+
+.profile-trip-badge {
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-trip-badge--ongoing {
+  background: #FFF0F1;
+  color: #F81927;
+}
+
+.profile-trip-badge--upcoming {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+
+/* Three-dot menu on image */
+.profile-trip-menu-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 200ms ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-trip-menu-btn:hover {
+  background: #F5F5F5;
+}
+
+/* Card content */
+.profile-trip-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.profile-trip-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+}
+
+.profile-trip-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.profile-trip-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #5F5F5F;
+}
+
+.profile-trip-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.profile-trip-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #5F5F5F;
+  font-weight: 500;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .profile-trips-grid { grid-template-columns: repeat(2, 1fr); }
+  .profile-stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .profile-container { padding: 0 20px; }
+  .profile-page-title { font-size: 28px; }
+  .profile-card-top { flex-direction: column; }
+  .profile-edit-btn { width: 100%; justify-content: center; }
+  .profile-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .profile-trips-grid { grid-template-columns: repeat(2, 1fr); }
+  .profile-info { height: auto; }
+}
+
+@media (max-width: 480px) {
+  .profile-trips-grid { grid-template-columns: 1fr; }
+  .profile-stats-row { grid-template-columns: 1fr 1fr; }
+  .profile-page-title { font-size: 24px; }
+}

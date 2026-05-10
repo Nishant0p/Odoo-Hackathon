@@ -3,8 +3,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Sora } from 'next/font/google'
-import Navbar from '../../../components/layout/Navbar'
-import Footer from '../../../components/layout/Footer'
 import '../../../styles/dashboard.css'
 
 const sora = Sora({ subsets: ['latin'], weight: ['400', '600', '700', '800'] })
@@ -46,8 +44,7 @@ export default function DashboardPage() {
   return (
     <div className={`dashboard-root ${sora.className}`}>
 
-      {/* 1. NAVBAR */}
-      <Navbar customClass="dash-navbar" />
+      {/* 2. HERO SECTION */}
 
       {/* 2. HERO SECTION */}
       <section className="dash-hero">
@@ -198,8 +195,6 @@ export default function DashboardPage() {
         </svg>
         Plan a trip
       </button>
-
-      <Footer customClass="dash-footer" />
 
     </div>
   )

@@ -1,0 +1,579 @@
+/* c:\Users\sathv_oyp3vt4\OneDrive\Desktop\Odoo-Hackathon-main\traveloopfrontend\styles\checklist.css */
+
+.chk-page {
+  background-color: #FAFAFA;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  font-family: 'Sora', sans-serif;
+  color: #111111;
+}
+
+.chk-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Page Header */
+.chk-page-header {
+  margin-top: 48px;
+}
+
+.chk-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.chk-title-icon {
+  color: #F81927;
+  display: flex;
+  align-items: center;
+}
+
+.chk-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.2;
+}
+
+.chk-subtitle {
+  font-size: 18px;
+  color: #5F5F5F;
+  line-height: 1.7;
+  max-width: 620px;
+  margin-top: 10px;
+}
+
+/* Search + Filter Bar */
+.chk-search-bar {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+}
+
+.chk-search-input-wrapper {
+  position: relative;
+}
+
+.chk-search-input {
+  width: 420px;
+  height: 58px;
+  border-radius: 14px;
+  border: 1px solid #CFCFCF;
+  background: #FFFFFF;
+  padding: 0 48px 0 20px;
+  font-size: 16px;
+  color: #111111;
+  outline: none;
+}
+.chk-search-input::placeholder {
+  color: #8A8A8A;
+}
+.chk-search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8A8A8A;
+}
+
+.chk-filter-btn {
+  height: 58px;
+  padding: 0 20px;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.chk-filter-btn:hover {
+  background: #F5F5F5;
+}
+
+/* Main Content Grid */
+.chk-content-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 0.7fr;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+/* LEFT COLUMN */
+
+/* Trip Selection Card */
+.chk-trip-card {
+  border: 1px solid #EAEAEA;
+  border-radius: 20px;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chk-trip-left {
+  display: flex;
+  align-items: center;
+}
+
+.chk-trip-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.chk-trip-info {
+  margin-left: 16px;
+}
+
+.chk-trip-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.chk-trip-title-icon {
+  color: #5F5F5F;
+  display: flex;
+  align-items: center;
+}
+
+.chk-trip-meta {
+  font-size: 15px;
+  color: #5F5F5F;
+  margin-top: 6px;
+}
+
+.chk-btn-view-trip {
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: #FFF0F1;
+  color: #F81927;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Progress Section */
+.chk-progress-section {
+  margin-top: 28px;
+}
+
+.chk-progress-label-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chk-progress-label-left {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  margin-right: 6px;
+}
+
+.chk-progress-label-mid {
+  font-size: 15px;
+  font-weight: 600;
+  color: #F81927;
+}
+
+.chk-progress-label-right {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5F5F5F;
+  margin-left: auto;
+}
+
+.chk-progress-bar-track {
+  height: 10px;
+  border-radius: 999px;
+  background: #EAEAEA;
+  width: 100%;
+  overflow: hidden;
+}
+
+.chk-progress-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #F81927;
+  transition: width 0.3s ease;
+}
+
+/* Category Cards */
+.chk-category-card {
+  border: 1px solid #EAEAEA;
+  border-radius: 20px;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  margin-top: 24px;
+}
+
+.chk-category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chk-category-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.chk-category-icon-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chk-category-icon-container.documents { background: #FFF0F1; color: #F81927; font-size: 20px; }
+.chk-category-icon-container.clothing { background: #FFF5E6; color: #F5A623; font-size: 20px; }
+.chk-category-icon-container.electronics { background: #E8F5E9; color: #4CAF50; font-size: 20px; }
+
+.chk-category-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+  margin-left: 12px;
+}
+
+.chk-category-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.chk-category-badge {
+  height: 34px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #FFF0F1;
+  color: #F81927;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.chk-category-chevron {
+  color: #5F5F5F;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.chk-checklist-items {
+  margin-top: 16px;
+}
+
+.chk-item-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 52px;
+  border-bottom: 1px dashed #ECECEC;
+  cursor: pointer;
+}
+.chk-item-row:last-child {
+  border-bottom: none;
+}
+
+.chk-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.chk-checkbox.checked {
+  background: #F81927;
+  border: 1px solid #F81927;
+  color: #FFFFFF;
+}
+.chk-checkbox.unchecked {
+  background: #FFFFFF;
+  border: 2px solid #CFCFCF;
+}
+
+.chk-item-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111111;
+  user-select: none;
+}
+.chk-item-label.checked {
+  text-decoration: line-through;
+  color: #8A8A8A;
+}
+
+/* Bottom Action Buttons */
+.chk-bottom-actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.chk-btn-primary-large {
+  width: 240px;
+  height: 58px;
+  background: #F81927;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+.chk-btn-primary-large:hover {
+  background: #D9101E;
+}
+
+.chk-btn-secondary-large {
+  width: 180px;
+  height: 58px;
+  background: #FFFFFF;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: 1px solid #EAEAEA;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+.chk-btn-secondary-large:hover {
+  background: #F5F5F5;
+}
+
+/* RIGHT COLUMN - SIDEBAR */
+
+/* Sidebar Card */
+.chk-sidebar-card {
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  margin-bottom: 24px;
+}
+
+.chk-sidebar-card-nopad {
+  border-radius: 22px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.chk-sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+}
+.chk-sidebar-header-icon {
+  color: #F81927;
+  display: flex;
+  align-items: center;
+}
+
+/* Circular Progress */
+.chk-circular-progress {
+  width: 140px;
+  height: 140px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chk-circular-progress-svg {
+  transform: rotate(-90deg);
+}
+
+.chk-circular-progress-text {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.chk-summary-text-center {
+  text-align: center;
+}
+
+.chk-summary-packed {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.chk-summary-packed-label {
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
+.chk-summary-remaining {
+  font-size: 14px;
+  font-weight: 600;
+  color: #F81927;
+  margin-top: 4px;
+}
+
+.chk-summary-rows {
+  margin-top: 20px;
+}
+
+.chk-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.chk-summary-row:last-child {
+  border-bottom: none;
+}
+
+.chk-summary-row-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.chk-summary-row-val {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+/* Travel Smart Tips */
+.chk-tip-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid #EAEAEA;
+}
+.chk-tip-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.chk-tip-icon-container {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #FFF0F1;
+  color: #F81927;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.chk-tip-content {
+  flex-grow: 1;
+}
+
+.chk-tip-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.chk-tip-desc {
+  font-size: 14px;
+  color: #5F5F5F;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+/* Promotional Card */
+.chk-promo-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.chk-promo-content {
+  padding: 20px;
+}
+
+.chk-promo-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.chk-promo-desc {
+  font-size: 14px;
+  color: #5F5F5F;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.chk-btn-promo {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #F81927;
+  background: #FFFFFF;
+  color: #F81927;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.chk-btn-promo:hover {
+  background: #FFF0F1;
+}
+
+.chk-hidden {
+  display: none !important;
+}
