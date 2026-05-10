@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Sora } from 'next/font/google'
 import '../../../styles/profile.css'
-import logoImg from '@/public/logo.png'
+
 
 const sora = Sora({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
@@ -176,43 +176,7 @@ export default function ProfilePage() {
   return (
     <div className={`profile-root ${sora.className}`}>
 
-      {/* 1. NAVBAR */}
-      <nav className="profile-navbar">
-        <div className="profile-nav-left">
-          <Image src={logoImg} alt="Traveloop"
-            width={180} height={44} className="profile-logo-img"
-            style={{ objectFit: 'contain', objectPosition: 'left' }} />
-          <ul className="profile-nav-links">
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Trips</a></li>
-            <li><a href="#">Deals</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </div>
-        <div className="profile-nav-right">
-          <button className="profile-nav-icon-btn">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5F5F5F" strokeWidth="1.5">
-              <circle cx="11" cy="11" r="9" />
-              <path d="M11 2 C11 2 7 6 7 11 C7 16 11 20 11 20" />
-              <path d="M11 2 C11 2 15 6 15 11 C15 16 11 20 11 20" />
-              <line x1="2" y1="11" x2="20" y2="11" />
-            </svg>
-          </button>
-          <button className="profile-nav-icon-btn">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5F5F5F" strokeWidth="1.5">
-              <path d="M6 10 C6 6 8 4 11 4 C14 4 16 6 16 10 L16 14 L18 16 L4 16 L6 14 Z" />
-              <line x1="9" y1="17" x2="13" y2="17" />
-            </svg>
-            <span className="profile-nav-notif-dot" />
-          </button>
-          <button className="profile-nav-profile-circle">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#5F5F5F" strokeWidth="1.5">
-              <circle cx="11" cy="8" r="4" />
-              <path d="M3 20 Q3 15 11 15 Q19 15 19 20" />
-            </svg>
-          </button>
-        </div>
-      </nav>
+
 
       <div className="profile-container">
 
@@ -387,17 +351,7 @@ export default function ProfilePage() {
 
       </div>
 
-      {/* 6. FOOTER */}
-      <footer className="profile-footer">
-        <span className="profile-footer-copy">
-          © 2024 Traveloop. All rights reserved.
-        </span>
-        <ul className="profile-footer-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </footer>
+
 
     </div>
   )

@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import logoImg from '../../public/logo.png'
+
 
 
 const Navbar = ({ customClass = 'dash-navbar' }) => {
@@ -12,11 +12,10 @@ const Navbar = ({ customClass = 'dash-navbar' }) => {
       <div className={`${customClass.split('-')[0]}-nav-left`}>
 
         <Image 
-          src={logoImg} 
+          src="/logo.png" 
           alt="Traveloop" 
           width={180} 
           height={44} 
-
           className={`${customClass.split('-')[0]}-logo-img`} 
           style={{ objectFit: 'contain', objectPosition: 'left' }}
         />

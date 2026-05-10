@@ -4,8 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Sora } from 'next/font/google'
 
-import Navbar from '../../../components/layout/Navbar'
-import Footer from '../../../components/layout/Footer'
+
 
 import '../../../styles/dashboard.css'
 
@@ -49,8 +48,7 @@ export default function DashboardPage() {
     <div className={`dashboard-root ${sora.className}`}>
 
 
-      {/* 1. NAVBAR */}
-      <Navbar customClass="dash-navbar" />
+
 
 
       {/* 2. HERO SECTION */}
@@ -204,7 +202,7 @@ export default function DashboardPage() {
       </button>
 
 
-      <Footer customClass="dash-footer" />
+
 
 
     </div>
