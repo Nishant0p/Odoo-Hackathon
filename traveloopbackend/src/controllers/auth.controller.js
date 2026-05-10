@@ -4,18 +4,52 @@ const prisma = require('../config/prisma');
 
 exports.register = async (req, res) => {
   try {
-    const { name, email, password, language_preference } = req.body;
+    const { 
+      firstName, first_name, 
+      lastName, last_name, lastname,
+      email, 
+      password_hash, 
+      phoneNumber, phonenumber, phone,
+      language_preference, language_prefrence,
+      photo, profile_photo,
+      city, 
+      country, counrtry,
+      message, messahe,
+      name
+    } = req.body;
     
-    if (!name || !email || !password) {
+    if (!email || !password_hash) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
     const existingUser = await prisma.user.findUnique({ where: { email } });
     if (existingUser) return res.status(400).json({ error: 'Email already exists' });
 
-    const password_hash = await bcrypt.hash(password, 10);
+    const hashed_password = await bcrypt.hash(password_hash, 10);
+
+    const finalFirstName = firstName || first_name || '';
+    const finalLastName = lastName || last_name || lastname || '';
+    const finalName = name || `${finalFirstName} ${finalLastName}`.trim();
+    const finalPhone = phoneNumber || phonenumber || phone;
+    const finalCountry = country || counrtry;
+    const finalMessage = message || messahe;
+    const finalLanguage = language_preference || language_prefrence;
+    const finalPhoto = photo || profile_photo;
+
     const user = await prisma.user.create({
-      data: { name, email, password_hash, language_preference }
+      data: { 
+        firstName: finalFirstName,
+        lastName: finalLastName,
+        name: finalName,
+        email, 
+        password_hash: hashed_password, 
+        phoneNumber: finalPhone,
+        profile_photo: finalPhoto,
+        city,
+        country: finalCountry,
+        message: finalMessage,
+        language_preference: finalLanguage 
+      }
     });
 
     res.status(201).json({ message: 'User registered successfully', userId: user.id });

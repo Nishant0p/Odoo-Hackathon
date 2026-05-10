@@ -9,10 +9,16 @@ datasource db {
 
 model User {
   id                  String   @id @default(uuid())
-  name                String
+  name                String?
+  firstName           String?
+  lastName            String?
   email               String   @unique
   password_hash       String
+  phoneNumber         String?
   profile_photo       String?
+  city                String?
+  country             String?
+  message             String?
   language_preference String?  @default("en")
   created_at          DateTime @default(now())
   
