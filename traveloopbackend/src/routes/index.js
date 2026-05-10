@@ -6,6 +6,7 @@ const authController = require('../controllers/auth.controller');
 const tripController = require('../controllers/trip.controller');
 const stopController = require('../controllers/stop.controller');
 const publicController = require('../controllers/public.controller');
+const adminController = require('../controllers/admin.controller');
 
 // Authentication
 router.post('/auth/register', authController.register);
@@ -29,5 +30,10 @@ router.get('/trips/:tripId/budget', tripController.getTripBudget);
 router.post('/trips/:tripId/stops', stopController.addStop);
 router.put('/trips/:tripId/stops/reorder', stopController.reorderStops);
 router.post('/stops/:stopId/activities', stopController.addActivity);
+
+// Admin Panel
+router.get('/admin/stats', adminController.getStats);
+router.get('/admin/users', adminController.getAllUsers);
+router.get('/admin/users/:userId/trips', adminController.getUserTrips);
 
 module.exports = router;
