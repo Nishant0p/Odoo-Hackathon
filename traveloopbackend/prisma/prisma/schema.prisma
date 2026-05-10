@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String   @id @default(uuid())
+  name                String?
+  firstName           String?
+  lastName            String?
+  email               String   @unique
+  password_hash       String
+  phoneNumber         String?
+  profile_photo       String?
+  city                String?
+  country             String?
+  message             String?
+  language_preference String?  @default("en")
+  created_at          DateTime @default(now())
+  
+  trips               Trip[]
+}
+
+model Trip {
+  id          String   @id @default(uuid())
+  user_id     String
+  user        User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  
+  trip_name   String
+  start_date  DateTime?
+  end_date    DateTime?
+  description String?
+  cover_photo String?
+  is_public   Boolean  @default(false)
+  share_token String   @unique @default(uuid())
+  created_at  DateTime @default(now())
+
+  stops       Stop[]
+  checklists  Checklist[]
+  notes       Note[]
+}
+
+model Stop {
+  id           String    @id @default(uuid())
+  trip_id      String
+  trip         Trip      @relation(fields: [trip_id], references: [id], onDelete: Cascade)
+  
+  city_name    String
+  country      String
+  travel_dates String?   // E.g., "Oct 12 - Oct 15" or use DateTime arrays
+  order_index  Int
+  
+  activities   Activity[]
+  notes        Note[]
+}
+
+model Activity {
+  id             String   @id @default(uuid())
+  stop_id        String
+  stop           Stop     @relation(fields: [stop_id], references: [id], onDelete: Cascade)
+  
+  title          String
+  description    String?
+  category       String?  // e.g., sightseeing, food, adventure, accommodation, flight
+  duration       Int?     // in minutes
+  cost           Float    @default(0.0)
+  scheduled_time DateTime?
+}
+
+model Checklist {
+  id         String  @id @default(uuid())
+  trip_id    String
+  trip       Trip    @relation(fields: [trip_id], references: [id], onDelete: Cascade)
+  
+  item_name  String
+  category   String? // clothing, documents, electronics
+  is_packed  Boolean @default(false)
+}
+
+model Note {
+  id        String   @id @default(uuid())
+  trip_id   String
+  trip      Trip     @relation(fields: [trip_id], references: [id], onDelete: Cascade)
+  
+  stop_id   String?
+  stop      Stop?    @relation(fields: [stop_id], references: [id], onDelete: Cascade)
+  
+  content   String
+  timestamp DateTime @default(now())
+}
